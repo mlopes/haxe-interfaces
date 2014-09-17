@@ -4,7 +4,7 @@ import flash.display.DisplayObject;
 import flash.geom.Point;
 
 
-interface DisplayObjectContainerInterface
+interface DisplayObjectContainerInterface extends InteractiveObjectInterface
 {
     public var mouseChildren:Bool;
     public var numChildren:Int;

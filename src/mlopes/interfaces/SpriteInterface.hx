@@ -4,7 +4,7 @@ import flash.display.Graphics;
 import flash.geom.Rectangle;
 
 
-interface SpriteInterface
+interface SpriteInterface extends DisplayObjectContainerInterface
 {
     public var buttonMode:Bool;
     public var graphics:Graphics;
