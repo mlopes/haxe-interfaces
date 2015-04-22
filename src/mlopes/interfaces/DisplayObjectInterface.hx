@@ -4,9 +4,11 @@ import flash.display.BlendMode;
 import flash.display.DisplayObject;
 import flash.display.DisplayObjectContainer;
 import flash.display.LoaderInfo;
+import flash.events.IEventDispatcher;
 import flash.geom.Point;
 import flash.geom.Rectangle;
 import flash.geom.Transform;
+import flash.display.Stage;
 
 
 interface DisplayObjectInterface extends IEventDispatcher
