@@ -1,7 +1,6 @@
 package mlopes.interfaces;
 
-
-interface InteractiveObjectInterface extends DisplayObject
+interface InteractiveObjectInterface extends DisplayObjectInterface
 {
     public var doubleClickEnabled:Bool;
     public var mouseEnabled:Bool;
