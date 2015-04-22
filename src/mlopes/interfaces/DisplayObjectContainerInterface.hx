@@ -7,7 +7,7 @@ import flash.geom.Point;
 interface DisplayObjectContainerInterface extends InteractiveObjectInterface
 {
     public var mouseChildren:Bool;
-    public var numChildren:Int;
+    public var numChildren (default,never):Int;
     public var tabChildren:Bool;
 
     public function addChild(child:DisplayObject):DisplayObject;
@@ -20,7 +20,7 @@ interface DisplayObjectContainerInterface extends InteractiveObjectInterface
     public function getObjectsUnderPoint(point:Point):Array<DisplayObject>;
     public function removeChild(child:DisplayObject):DisplayObject;
     public function removeChildAt(index:Int):DisplayObject;
-    public function removeChildren(beginIndex:Int, endIndex:Int):Void;
+    public function removeChildren(beginIndex:Int = 0, endIndex:Int = 0x7FFFFFFF):Void;
     public function setChildIndex(child:DisplayObject, index:Int):Void;
     public function swapChildren(child1:DisplayObject, child2:DisplayObject):Void;
     public function swapChildrenAt(index1:Int, index2:Int):Void;
